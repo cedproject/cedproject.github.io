@@ -1,0 +1,5 @@
+Sitemap: https://cedproject.org/sitemap.xml
+Sitemap: https://cedproject.org/news-sitemap.xml
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php

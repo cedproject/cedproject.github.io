@@ -1,0 +1,6 @@
+.home.page.hide-homepage-title .entry-header {display: none;}
+.home.page.hide-homepage-title .site-main > article > .entry-content {margin-top: 0;}
+.cdm-icon svg {fill: #fff;}
+.comment-list #respond #commentform {clear: both;}
+.comment-reply-title #cancel-comment-reply-link {font-size: 15.65px;margin-bottom: 1em;}
+.hide-footer-credit .comma {display: none;}
