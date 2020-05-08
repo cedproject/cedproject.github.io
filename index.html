@@ -12,7 +12,7 @@
 	<link rel="apple-touch-icon" href="img/ico180x180.png">
 	<meta name="msapplication-TileImage" content="img/ico270x270.png">
 
-	<style type="text/css" id="wp-custom-css">
+	<style type="text/css">
 		#masthead .site-title {
 			font-size: 2rem;
 		}
@@ -28,6 +28,25 @@
 
 		.entry-title {
 			display: none;
+		}
+
+		#keybox {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), 
+					url(img/monochrome-photography-of-keys-792031.jpg);
+			background-position: 50% 63%;
+			min-height: 388px;
+			height: auto !important;
+		}
+
+		#volunteerBox {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/businesswomen-businesswoman-interview-meeting-70292.jpg);
+			min-height: 507px;
+			height: auto !important;
+		}
+
+		#analysisBox{
+			background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/houses-near-road-2157404.jpg);
+			height: auto !important;
 		}
 	</style>
 
@@ -102,9 +121,9 @@
 
 						<div class="entry-content">
 
-							<div class="wp-block-cover alignfull has-background-dim-60 has-foreground-dark-background-color has-background-dim is-style-default"
-								style="background-image:url(img/monochrome-photography-of-keys-792031.jpg);background-position:50% 63%;min-height:388px">
-								<div class="wp-block-cover__inner-container">
+							<div id="keybox"
+								class="wp-block-cover alignfull has-background-dim-60 has-foreground-dark-background-color has-background-dim is-style-default">
+								<div class="wp-block-cover__inner-container responsive-max-width">
 									<p id="home">The COVID-19 Eviction Defense Project is a collaborative, community
 										legal project. Our mission is to provide Coloradoans who are unable to pay their
 										rent during the COVID-19 crisis with information and support.</p>
@@ -172,8 +191,8 @@
 							<div class="wp-block-group alignfull">
 								<div class="wp-block-group__inner-container">
 									<div class="wp-block-cover alignfull has-background-dim-60 has-background-dim"
-										style="background-image:url(img/businesswomen-businesswoman-interview-meeting-70292.jpg);min-height:507px">
-										<div class="wp-block-cover__inner-container">
+										id="volunteerBox">
+										<div class="wp-block-cover__inner-container responsive-max-width">
 											<h3 class="has-text-align-left" id="volunteer">Volunteer</h3>
 
 
@@ -280,8 +299,8 @@
 
 
 							<div class="wp-block-cover alignfull has-background-dim"
-								style="background-image:url(img/houses-near-road-2157404.jpg)">
-								<div class="wp-block-cover__inner-container">
+								id="analysisBox">
+								<div class="wp-block-cover__inner-container responsive-max-width">
 									<h3 class="has-text-align-left" id="analysis">Analysis</h3>
 
 
