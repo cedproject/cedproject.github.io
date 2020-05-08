@@ -7,6 +7,7 @@
 		crisis</title>
 
 	<link rel="stylesheet" href="./cedproject_files/styles.pure.css" type="text/css" media="all">
+	<script src="./cedproject_files/jquery-3.5.1.min.js"></script>
 
 	<link rel="icon" href="img/ico32x32.png" sizes="32x32">
 	<link rel="icon" href="img/ico192x192.png" sizes="192x192">
@@ -51,6 +52,16 @@
 		}
 	</style>
 
+	<script>
+		function toggleVisible(){
+			if($('#jumpmenu').css("display") === "none"){
+				$('#jumpmenu').css("display","block")
+			}
+			else{
+				$('#jumpmenu').css("display","none")
+			}
+		}
+	</script>
 </head>
 
 <body
@@ -73,13 +84,13 @@
 
 			<nav id="site-navigation" class="main-navigation" aria-label="Main Navigation">
 				<input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
-				<label for="toggle" id="toggle-menu" class="button">
+				<label for="toggle" id="toggle-menu" class="button" onclick="toggleVisible();">
 					Menu <span class="dropdown-icon open">+</span>
 					<span class="dropdown-icon close">×</span>
 					<span class="hide-visually expanded-text">expanded</span>
 					<span class="hide-visually collapsed-text">collapsed</span>
 				</label>
-				<div class="menu-jumpmenu-container">
+				<div class="menu-jumpmenu-container" id="jumpmenu">
 					<ul id="menu-jumpmenu" class="main-menu" aria-label="submenu">
 						<li id="menu-item-221"
 							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-221"><a
